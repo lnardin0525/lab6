@@ -1,4 +1,5 @@
 #Lucas Nardin
+# marco added a comment here
 def encode(password):
     encoded_list = []
     for char in password:
