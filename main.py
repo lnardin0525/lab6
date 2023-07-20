@@ -15,16 +15,16 @@ if __name__ == "__main__":
     while not(program_quit):
 
         print('Menu:\n'
-          '-----\n'
-          '1. Encode Password\n'
-          '2. Decode Password\n'
+          '-------------\n'
+          '1. Encode\n'
+          '2. Decode\n'
           '3. Quit\n')
 
-        user_input = input('Select an option: ')
+        user_input = input('Please enter an option: ')
 
         if user_input == '1':
-            new_password = encode(input('Enter password: '))
-            print(f'Your encoded password is: {new_password}\n')
+            password = encode(input('Please enter your password to encode: '))
+            print(f'Your password has been encoded and stored!\n')
 
         elif user_input == '2':
             pass
