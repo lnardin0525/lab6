@@ -8,14 +8,6 @@ def encode(password):
     encoded_password = ''.join(encoded_list)
     return encoded_password
 
-def decode(encoded_password):
-    decoded_list = []
-    for char in encoded_password:
-        decoded_char = str(int(char) - 3)
-        decoded_list.append(decoded_char)
-    decoded_password = ''.join(decoded_list)
-    return decoded_password
-
 if __name__ == "__main__":
     program_quit = False
 
