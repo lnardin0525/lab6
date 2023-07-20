@@ -10,6 +10,16 @@ def encode(password):
     encoded_password = ''.join(encoded_list)
     return encoded_password
 
+def decode(encoded_password):
+    decoded_list = []
+    for char in encoded_password:
+        decoded_char = str(int(char) + 3)
+        if int(decoded_char) < 0:
+            decoded_char = str(int(decoded_char) + 10)
+        decoded_list.append(decoded_char)
+    decoded_password = ''.join(decoded_list)
+    return decoded_password
+
 if __name__ == "__main__":
     program_quit = False
 
@@ -28,7 +38,8 @@ if __name__ == "__main__":
             print(f'Your password has been encoded and stored!\n')
 
         elif user_input == '2':
-            pass
+            decoded_password = decode(encoded_password=[])
+            print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.\n")
         elif user_input == '3':
             program_quit = True
             break
