@@ -1,3 +1,4 @@
+#Lucas Nardin
 def encode(password):
     encoded_list = []
     for char in password:
